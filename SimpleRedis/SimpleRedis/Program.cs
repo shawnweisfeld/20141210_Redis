@@ -25,7 +25,7 @@ namespace SimpleRedis
 
             //lets play with cache expiration
             Console.WriteLine("Writing a value to the cache with a 5 second expy.");
-            db.StringSet("MyName", "Shawn", TimeSpan.FromSeconds(30));
+            db.StringSet("MyName", "Shawn", TimeSpan.FromSeconds(5));
 
             Console.WriteLine("Reading the value back immediately. MyName is {0}", db.StringGet("MyName"));
 
